@@ -14,11 +14,12 @@ export default function Page() {
     <div className="flex justify-center p-3">
       <SignIn
         appearance={{
+          //
           baseTheme: theme === "light" ? [light, light] : [dark, dark],
           // baseTheme: [dark, dark],
           variables: {
-            colorPrimary: theme === "light" ? "" : "#9dc2f5",
-            colorBackground: theme === "light" ? "#f9fafb" : "#5a77a0",
+            colorPrimary: theme === "light" ? "" : "#2866e2",
+            colorBackground: theme === "light" ? "#f9fafb" : "#283a50",
             colorText: theme === "light" ? "#374151" : "#e5e7eb",
           },
         }}
