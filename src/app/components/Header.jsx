@@ -78,6 +78,10 @@ export default function Header() {
             baseTheme: theme === "light" ? light : dark,
           }}
         >
+          {/* <Button gradientDuoTone="purpleToBlue" outline>
+            <SignInButton />
+          </Button> */}
+
           <Link href="/sign-in">
             <Button gradientDuoTone="purpleToBlue" outline>
               Sign In
