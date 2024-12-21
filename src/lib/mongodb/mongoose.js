@@ -12,6 +12,7 @@ export const connect = async () => {
       dbName: "devtech-blog",
       useNewUrlParser: true,
       useUnifiedToplogy: true,
+      // yes
     });
     console.log("Already Connected to mongoDB");
     initialized = true;
