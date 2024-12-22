@@ -267,7 +267,7 @@ export async function POST(req) {
   console.log("Webhook payload:", body);
 
   if (eventType === "user.created" || eventType === "user.updated") {
-    const { id, first_name, last_name, img_url, email_addresses, username } =
+    const { id, first_name, last_name, image_url, email_addresses, username } =
       evt?.data;
 
     if (!id || !first_name || !last_name) {
@@ -281,7 +281,7 @@ export async function POST(req) {
         id,
         first_name,
         last_name,
-        img_url,
+        image_url,
         email_addresses,
         username
       );
