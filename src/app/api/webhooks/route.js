@@ -291,8 +291,8 @@ export async function POST(req) {
         try {
           // Verify if the user exists in Clerk
           console.log(`Verifying user ${id} in Clerk`);
-          const clerkUser = await clerkClient.users.getUser(id); // Verify user exists
-          console.log("Clerk user found:", clerkUser);
+          // const clerkUser = await clerkClient.users.updateUserMetadata(); // Verify user exists
+          // console.log("Clerk user found:", clerkUser);
 
           // Update metadata only if user exists
           console.log(`Updating user metadata for ${id}`);
