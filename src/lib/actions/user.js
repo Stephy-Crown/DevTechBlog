@@ -50,14 +50,14 @@ export const createOrUpdateUser = async (
   id,
   first_name,
   last_name,
-  image_url,
+  profile_image_url,
   email_addresses,
   username
 ) => {
   try {
     await connect();
     // / Default profile picture if none is provided
-    const profilePic = image_url || "https://example.com/default-profile.png";
+    const profilePic = profile_image_url;
     const user = await User.findOneAndUpdate(
       { clerkId: id },
       {
