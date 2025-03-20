@@ -25,7 +25,7 @@ export default function Page() {
             colorText: theme === "light" ? "#374151" : "#e5e7eb",
           },
         }}
-        path="/sign-in"
+        // path="/sign-in"
       />
     </div>
   );
